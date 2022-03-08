@@ -1,0 +1,2313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/favicon-tools.png" type="image/png" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="./styles.css" />
+  <title>NS Comercializadora</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="wrapper container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./images/ns_logo.png" alt="">
+        </a>
+      </div>
+      <ul class="nav-list">
+        <div class="top">
+          <label for="" class="btn close-btn">
+            <i class="fas fa-times"></i>
+          </label>
+        </div>
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="products.html">Productos</a>
+        </li>
+        <li>
+          <a href="index.html#categories">Categorías</a>
+        </li>
+        <li>
+          <a href="index.html#new">Novedades</a>
+        </li>
+        <li>
+          <a href="index.html#featured">Destacados</a>
+        </li>
+        <li>
+          <a href="index.html#brands">Marcas</a>
+        </li>
+        <li>
+          <a href="https://www.whatsapp.com/business/api" target="_blank">Contáctanos</a>
+        </li>
+        <!-- icons -->
+        <li class="icons">
+          <a href="cart.html"></a>
+        </li>
+      </ul>
+      <label for="" class="btn open-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+    </div>
+  </nav>
+  <!-- PRODUCTS -->
+  <section class="section products">
+    <div class="products-layout container">
+      <div class="col-1-of-4">
+        <div>
+          <div class="block-title">
+            <h3>Categorías</h3>
+          </div>
+          <ul id="category-list" class="block-content"></ul>
+        </div>
+        <div>
+          <div class="block-title">
+            <h3>Sub Categorías</h3>
+          </div>
+          <ul id="subcategory-list" class="block-content"></ul>
+        </div>
+        <div>
+          <div class="block-title">
+            <h3>Marcas</h3>
+          </div>
+          <ul id="brand-list" class="block-content"></ul>
+        </div>
+      </div>
+      <div class="col-3-of-4">
+        <!-- <form action="">
+            <div class="item">
+              <label for="sort-by">Ordenar por</label>
+              <select name="sort-by" id="sort-by">
+                <option value="title" selected="selected">Nombre</option>
+                <option value="number">Precio</option>
+                <option value="search_api_relevance">Relevancia</option>
+                <option value="created">Nuevo</option>
+              </select>
+            </div>
+            <div class="item">
+              <label for="order-by">Orden</label>
+              <select name="order-by" id="sort-by">
+                <option value="ASC" selected="selected">Ascendente</option>
+                <option value="DESC">Descendente</option>
+              </select>
+            </div>
+            <a href="">Aplicar</a>
+          </form> -->
+        <div id="product-container" class="product-layout">
+          <div data-categories="Abrasivos" data-subcategories="Discos Laminados" data-brands="AxTools" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-1.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco Laminado 4 1/2"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Discos Laminados" data-brands="AxTools" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-2.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco Laminado 7"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Discos de Desbaste" data-brands="AxTools" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-3.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco de Desbaste 7"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Discos Ultradelgados" data-brands="Cinasa" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-17.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco Ultradelgado 7"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Discos de Desbaste" data-brands="Weston" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-16.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco de Desbaste 4 1/2"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Discos Ultradelgados" data-brands="Austromex" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-15.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco Ultradelgado 4 1/2"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Discos Ultradelgados" data-brands="Fandeli" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-14.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco Ultradelgado 4 1/2"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Discos Ultradelgados" data-brands="Hecort" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-13.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco Ultradelgado 4 1/2"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Discos Ultradelgados" data-brands="AxTools" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-12.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco Ultradelgado 4 1/2"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Discos Ultradelgados" data-brands="Welder" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-11.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco Ultradelgado 4 1/2"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Discos de Corte" data-brands="Hecort" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-10.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco de Corte 14" x 1/8"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Discos de Corte" data-brands="Bosch" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-9.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco de Corte 14" x 1/8"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Discos de Corte" data-brands="Makita" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-8.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco de Corte 14"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Discos de Desbaste" data-brands="Hecort" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-7.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco de Desbaste 4 1/2"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Discos de Desbaste" data-brands="Makita" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-6.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco de Desbaste 7"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Discos de Corte" data-brands="Cinasa" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-5.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco de Corte 4 1/2"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Discos de Desbaste" data-brands="AxTools" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-4.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco de Desbaste 4 1/2"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Discos de Corte" data-brands="Cinasa" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-18.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco de Corte 7"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-brands="Kompetidor" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-43.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco Kompetidor</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-brands="Plusline" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-44.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco Plusline</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Discos de Metal" data-brands="DEWALT" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-45.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Disco de Metal 14"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Piedras" data-brands="PFX" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-36.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Piedra copa 4</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Piedras" data-brands="PFX" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-37.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Piedra copa 5</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Ruedas de Esmeril" data-brands="Cinasa" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-19.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Rueda esmeril 8" Verde Grano 60</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Ruedas de Esmeril" data-brands="Cinasa" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-21.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Rueda esmeril 8" Grano 60</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Ruedas de Esmeril" data-brands="Cinasa" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-20.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Rueda esmeril 8" Grano 36</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Cardas" data-brands="Cinasa" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-46.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Carda copa 3</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Cardas" data-brands="Cinasa" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-47.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Carda copa 4</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Cardas" data-brands="Cinasa" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-48.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Carda copa 5</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Cepillos" data-brands="Cinasa" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-38.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Cepillo de alambre</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Cepillos" data-brands="Tenazit" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-39.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Cepillo de acero inoxidable</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Cepillos" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-40.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Cepillo de brocha</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Puntas montadas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-41.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Punta montada A-3 Rosa</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Puntas montadas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-42.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Punta montada A-3 Gris</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Ruedas Flap" data-brands="Cinasa" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-22.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Rueda Flap Cinasa con vástago 1-1/2" x 1" x 1/4" grado 60</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Ruedas Flap" data-brands="Cinasa" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-23.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Rueda Flap Cinasa 1" x 1" x 1/4" grado 60</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Limas" data-brands="Truper" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-24.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Lima plana 12"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Limas" data-brands="Truper" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-25.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Lima plana 10"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Limas" data-brands="Truper" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-26.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Lima redonda 10"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Limas" data-brands="Truper" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-27.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Lima redonda 12"</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Limas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-28.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Lima rotativa SA-5</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Limas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-29.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Lima rotativa SC-5</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Limas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-30.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Lima rotativa SG-5</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Limas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-31.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Lima rotativa SC-2</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Limas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-32.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Lima rotativa SF-5</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Limas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-33.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Lima rotativa SL-3</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Limas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-34.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Lima rotativa SL-4</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Limas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-35.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Lima rotativa SM-4</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Lijas" data-brands="Cinasa" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-229.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Variedad de lijas</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Brocas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-252.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Variedad de brocas</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Brocas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-253.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Variedad de brocas</a>
+            </div>
+          </div>
+          <div data-categories="Abrasivos" data-subcategories="Brocas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-254.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Variedad de brocas</a>
+            </div>
+          </div>
+
+          <!-- Seguridad -->
+          <div data-categories="Seguridad" data-subcategories="Pecheras" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-49.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Pechera de carnaza</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Polainas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-50.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Polaina de carnaza</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Mangas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-51.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Manga de carnaza</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Guantes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-52.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Guante corto de carnaza</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Guantes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-53.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Guante largo de carnaza</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Mangas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-54.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Manga de mezclilla</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Pecheras" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-55.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Pechera de mezclilla</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Capuchas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-56.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Capucha de mezclilla</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Guantes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-57.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Guante operador de piel de res</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Guantes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-58.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Guante aluminizado</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Guantes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-59.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Guante afelpado para soldador</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Guantes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-60.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Guante de anticorte nivel 5</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Guantes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-61.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Guante con puntos PVC algodón</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Guantes" data-brands="Grendil" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-62.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Guante de nitrilo palma</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Guantes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-63.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Guante de algodón sin puntos</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Guantes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-64.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Guantes de neopreno para manejo de solventes</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Impermeables" data-brands="Pretul" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-65.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Overol impermeable</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Impermeables" data-brands="Pretul" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-196.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Overol impermeable</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Orejeras" data-brands="Aksi" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-66.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Orejera protectora</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Tapones auditivos" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-67.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Tapón auditivo desechable</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Tapones auditivos" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-68.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Tapón auditivo reutilizable</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Mascarillas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-69.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Mascarilla KN-95</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Mascarillas" data-brands="Herhild" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-70.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Mascarilla N-95 con filtro</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Respiradores" data-brands="3M" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-135.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Respirador full face 3M</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Respiradores" data-brands="3M" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-72.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Respirador media cara 3M</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Respiradores" data-brands="3M" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-73.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Cartucho respirador full face 3M</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Respiradores" data-brands="3M" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-74.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Cartucho respirador media cara 3M</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-75.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Rodilleros</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-76.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Barbiquejo</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Chalecos" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-77.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Chaleco malla reflejante</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Chalecos" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-136.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Chaleco malla reflejante</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Chalecos" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-79.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Chaleco para brigadista</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Chalecos" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-80.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Chaleco para brigadista</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Chalecos" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-81.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Chaleco para brigadista</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-82.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Protector facial</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Cascos" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-83.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Cabezal para casco</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Cascos"  data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-139.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Casco de seguridad</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Cascos"  data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-140.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Casco de Pronosa</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-84.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Mica protectora facial</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-85.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Mica protectora facial</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-86.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Faja</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-87.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Gel antibacterial</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Lentes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-71.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Sobrelentes</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Lentes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-88.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Lentes sport claros</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Lentes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-89.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Lentes sport oscuros</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Lentes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-90.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Lentes sargento claros</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Lentes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-91.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Lentes sargento oscuro</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Lentes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-92.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Lentes Sombra #5</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Lentes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-93.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Goggles de segurirdad</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Cascos"  data-brands="Truper" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-94.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Cubrenuca para casco con reflejante</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-95.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Careta para soldar</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-96.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Cinta de peligro roja</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-97.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Cinta de precaución amarilla</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-98.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Candado</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-99.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Porta candado tipo tijera</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Lentes"data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-100.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Repuesto de goggles oscuro</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Lentes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-101.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Repuesto de goggles claro</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Caretas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-137.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Careta para soldar electrónica personalizada</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Caretas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-138.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Careta para soldar electrónica</a>
+            </div>
+          </div>
+          <div data-categories="Seguridad" data-subcategories="Caretas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-103.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Vidrio para careta claro</a>
+            </div>
+          </div> 
+          <div data-categories="Seguridad" data-subcategories="Caretas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-197.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Vidrio para careta oscuro</a>
+            </div>
+          </div> 
+
+          <!-- TIG y MIG -->
+
+          <div data-categories="TIG y MIG" data-brands="Tweco" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-185.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Antorcha tipo Tweco 400 A conector Lincoln LN7</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="NXT, Tregaskiss" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-186.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Antorcha tipo Tregaskiss 400 A entrada Miller</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="Exel, Tweco" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-187.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Antorcha 250 A entrada Europea</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="Exel, Tweco" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-188.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Antorcha tipo Tweco 400 A entrada Lincoln</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="Tweco" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-189.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Antorcha tipo Tweco 250 A entrada Miller</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="Hyperweld, Tweco" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-190.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Antorcha 400 A tipo Tweco entrada Miller</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="Arcair, Weston" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-191.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Antorcha Arcair K4000</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="Tweco" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-192.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Antorcha Tweco 400 A entrada Lincoln</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="NXT, Tregaskiss" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-194.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Antorcha tipo Tregaskiss 400 A entrada Lincoln</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="Weston, Hyperweld" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-195.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Antorcha todo 26Fv-25-2</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-255.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Liner 42-4045-15 Tipo Tweco</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-256.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Liner 44-3545-15 Tipo Tweco 0.035-0.045</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-257.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Liner 44-116-15 Tipo Tweco</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-258.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Liner44-116-25</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-259.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Liner 415-116-15 Tipo Tregaskiss</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="Profax, Exel Air" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-286.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Tuerca de retención S10147</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="Profax, Exel Air" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-287.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Juego de rodillos</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="Profax, Exel Air" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-288.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Juego de rodillos Miller "VK"</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="Profax, Exel Air" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-289.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Juego de rodillos "V"</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="Profax, Exel Air" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-290.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Conjunto de cuerpo de boquilla S10157</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="Profax, Exel Air" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-291.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Férula de bloqueo</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="Profax, Exel Air" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-292.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Conjunto de cuerpo de boquilla S10157</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="Profax, Exel Air" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-294.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Juego de rodillos 3/32</a>
+            </div>
+          </div>
+          <div data-categories="TIG y MIG" data-brands="Profax, Exel Air" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-296.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Limpia boquillas</a>
+            </div>
+          </div>
+
+          <!-- Consumibles -->
+
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-198.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Aislador 32A</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-199.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Tobera 22-50 tipo Tweco</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-200.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Punta de contacto 14H-45</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-201.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Difusor 54-A tipo Tweco</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-202.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Tobera Binzel M6</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-203.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Tobera 23-62 tipo Tweco</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-204.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Punta Tregaskiss. 045</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-205.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Difusor 52FN tipo Tweco</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-206.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Punta 14H-T45</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-207.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Punta tipo Tweco 14H-35</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-208.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Tobera Binzel M8</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-209.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Tobera Tregaskiss 401-42-50</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-210.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Punta de contacto 14H ¹/¹⁶</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-211.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Punta tipo Tweco 14H52</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-212.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Difusor tipo Tregaskiss 404-3</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-213.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Tobera Tregaskiss 401-6-62</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-214.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Punta Tregaskiss 403-20-35</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-215.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Difusor Tregaskiss 404-3</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-216.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Difusor Tregaskiss 404-26</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-217.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Tobera tipo Tweco 23-T37</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-218.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Electrodomésticos Hyperther 220842</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-219.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Consumible Thermal Dynamics 9-8213</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-220.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Conector power pin Lincoln LN7</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-221.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Juego de Rodillo Miller 035</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-222.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Ploga para antorcha entrada Lincoln</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-223.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Nozzle HYPERTHERM 65A a 105A 220816, 220819 y 220990</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-224.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Nozzle Esab para PT36</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-225.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Baffle para Antorcha ESAB PT-36 Plasma</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-226.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Guía externa LINCOLN para microalambre 035 KP-2071-1</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-227.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Consumible para plasma Thermal Dinamycs</a>
+            </div>
+          </div>
+          <div data-categories="Consumibles" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-228.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Punta para Arco sumergido 052</a>
+            </div>
+          </div>
+
+          <!-- Herramienta eléctrica -->
+
+          <div data-categories="Herramienta eléctrica" data-brands="Dewalt" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-173.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Mini esmeriladora Angular 4-1/2"</a>
+            </div>
+          </div>
+          <div data-categories="Herramienta eléctrica" data-brands="Dewalt" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-174.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Esmeriladora recta de 1-1/2"</a>
+            </div>
+          </div>
+          <div data-categories="Herramienta eléctrica" data-brands="Dewalt" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-175.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Esmeriladora Angular 7"</a>
+            </div>
+          </div>
+          <div data-categories="Herramienta eléctrica" data-brands="Makita" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-176.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Mini esmeriladora angular 4-1/2</a>
+            </div>
+          </div>
+          <div data-categories="Herramienta eléctrica" data-brands="Makita" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-177.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Rectificador de 3.5 Amperes</a>
+            </div>
+          </div>
+          <div data-categories="Herramienta eléctrica" data-brands="Makita" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-178.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Esmeriladora angular 7"</a>
+            </div>
+          </div>
+          <div data-categories="Herramienta eléctrica" data-brands="Makita" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-179.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Rotomartillo 5/8"</a>
+            </div>
+          </div>
+          <div data-categories="Herramienta eléctrica" data-brands="Dewalt" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-180.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Taladro Rotomartillo 1/2"</a>
+            </div>
+          </div>
+          <div data-categories="Herramienta eléctrica" data-brands="Dewalt" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-181.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Llave de impacto de 1/2"</a>
+            </div>
+          </div>
+          <div data-categories="Herramienta eléctrica" data-brands="Pretul" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-182.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Rotomartillo 1/2"</a>
+            </div>
+          </div>
+          <div data-categories="Herramienta eléctrica" data-brands="Makita" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-184.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Sierra Sable 1-1/8"</a>
+            </div>
+          </div>
+          <div data-categories="Herramienta eléctrica" data-brands="Xtools" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-271.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Soldadora Inversora 200A y 160A</a>
+            </div>
+          </div>
+          <div data-categories="Herramienta eléctrica" data-brands="Xtools" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-272.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Soldadora Inversora 255M</a>
+            </div>
+          </div>
+          <div data-categories="Herramienta eléctrica" data-brands="Truper" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-273.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Pistola de aire para limpieza de motores</a>
+            </div>
+          </div>
+          <div data-categories="Herramienta eléctrica" data-brands="Miller" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-275.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Soldadora Miller</a>
+            </div>
+          </div>
+
+          <!-- Soldadura -->
+
+          <div data-categories="Soldadura" data-brands="Weston" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-277.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Micro alambre tubular 0,035"</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="Weston" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-278.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Micro alambre tubular 0,030"</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="EXEL" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-279.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Micro alambre ER-308L 0.035"</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="EXEL" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-280.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Micro alambre 3/64"</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-281.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Micro alambre E308LT1-1/-4</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-282.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Micro alambre 309L ESAB</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="Binzel" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-283.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Micro alambre ER308LSI 0,90mm</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="Binzel" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-284.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Micro alambre ER308LSI 1.20mm</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="Pacific Standard" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-285.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Micro alambre tubular 1/16"</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-233.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Decapante</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-237.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Desmoldante en aerosol</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="Cantesco" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-241.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Aerosoles revelador, limpiador y penetrante</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="Markal" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-243.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Marcador en pasta</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="Tempilstik" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/PRODUCT-244.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Marcador para alta temperatura</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="Markal" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-245.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Marcador punta fieltro para soldadura</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="Pronosa" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-246.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Porta electrodo 300-500 amps</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="Pronosa" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-247.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Pinza de tierra</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="Omega" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-248.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Soldadura de estaño 50/50</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-249.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Pasta para soldadura de cautin</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-303.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Marcador tipo jabón</a>
+            </div>
+          </div>
+
+          <!-- Aportes -->
+
+          <div data-categories="Soldadura" data-subcategories="Aportes" data-brands="Weston" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-261.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Aporte 1/8"</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-subcategories="Aportes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-262.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Aporte 70S-3 3/32</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-subcategories="Aportes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-263.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Aporte 308L 1/16</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-subcategories="Aportes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-264.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Aporte 308L-16 3/32</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-subcategories="Aportes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-265.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Aporte 308 1/8</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-subcategories="Aportes" data-brands="Weston" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-266.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Aporte 1/8 3,17mm</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-subcategories="Aportes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-267.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Aporte 316L 1/16</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-subcategories="Aportes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-268.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Aporte E-309L</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-subcategories="Aportes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-269.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Aporte 309 3/32</a>
+            </div>
+          </div>
+
+          <!-- Electrodos -->
+
+          <div data-categories="Soldadura" data-subcategories="Electrodos" data-brands="Arcair, Binzel" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-270.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Variedad de electrodos</a>
+            </div>
+          </div>
+          <div data-categories="Soldadura" data-subcategories="Electrodos" data-brands="Weston" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-274.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Horno para electrodos portátil</a>
+            </div>
+          </div>
+
+          <!-- Ferretería -->
+
+          <div data-categories="Ferretería" data-subcategories="" data-brands="Rubbermaid" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-276.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Termos</a>
+            </div>
+          </div>
+          <div data-categories="Ferretería" data-subcategories="" data-brands="Truper" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-297.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Variedad de artículos de ferretería</a>
+            </div>
+          </div>
+          <div data-categories="Ferretería" data-subcategories="" data-brands="Truper" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-298.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Variedad de artículos de ferretería</a>
+            </div>
+          </div>
+          <div data-categories="Ferretería" data-subcategories="" data-brands="Truper" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-299.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Variedad de artículos de ferretería</a>
+            </div>
+          </div>
+          <div data-categories="Ferretería" data-subcategories="" data-brands="Truper, Pretul" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-300.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Variedad de artículos de ferretería</a>
+            </div>
+          </div>
+          <div data-categories="Ferretería" data-subcategories="" data-brands="Truper, Pretul" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-301.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Variedad de artículos de ferretería</a>
+            </div>
+          </div>
+          <div data-categories="Ferretería" data-subcategories="" data-brands="Weston, Pretul" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-297.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Variedad de artículos de ferretería</a>
+            </div>
+          </div>
+          <div data-categories="Ferretería" data-subcategories="" data-brands="Maxtools" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-250.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Flexómetros 3m,5m,8m</a>
+            </div>
+          </div>
+          <div data-categories="Ferretería" data-subcategories="" data-brands="Stanley" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-251.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Flexómetros 5m,8m</a>
+            </div>
+          </div>
+          <div data-categories="Ferretería" data-subcategories="" data-brands="Everlast" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-302.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Variedad de pinturas en aerosol</a>
+            </div>
+          </div>
+          <div data-categories="Ferretería" data-subcategories="" data-brands="Aksi" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-230.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Grasa multiuso</a>
+            </div>
+          </div>
+          <div data-categories="Ferretería" data-subcategories="" data-brands="Truper" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-235.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Espuma expansiva</a>
+            </div>
+          </div>
+          <div data-categories="Ferretería" data-subcategories="" data-brands="Weston" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-236.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Aerosol galvanizado</a>
+            </div>
+          </div>
+          <div data-categories="Ferretería" data-subcategories="" data-brands="Aksi" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-238.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Aceite afloja todo</a>
+            </div>
+          </div>
+          <div data-categories="Ferretería" data-subcategories="" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-239.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Gas propano en lata</a>
+            </div>
+          </div>
+          <div data-categories="Ferretería" data-subcategories="" data-brands="TF" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-240.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Arrancador Química</a>
+            </div>
+          </div>
+          <div data-categories="Ferretería" data-subcategories="" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-242.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Bebida hidratante sin azúcar</a>
+            </div>
+          </div>
+
+          <!-- Oxicorte -->
+
+          <div data-categories="Oxicorte" data-subcategories="Reguladores" data-brands="Weston" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-141.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Regulador con flujómetro para argón CO2</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Reguladores" data-brands="Weston" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-142.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Regulador con flujómetro CO2</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Reguladores" data-brands="Weston" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-170.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Regulador uso acetileno</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Reguladores" data-brands="Weston" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-170.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Regulador uso oxígeno</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Cortadores" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-143.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Cortador tipo Victor</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Cortadores" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-144.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Cortador tipo Harris</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Flujómetros" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-145.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Flujómetro de argón</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Flujómetros" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-146.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Flujómetro de CO2</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Boquillas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-147.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Boquilla butano tipo Victor</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Boquillas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-148.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Boquilla butano tipo Smith</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Boquillas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-149.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Boquilla para corte Acetileno tipo Victor 1 - 101 - #1</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Boquillas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-152.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Boquilla multiflama #1</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Boquillas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-153.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Boquilla multiflama #2</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Boquillas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-150.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Boquilla multiflama #3</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Boquillas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-151.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Boquilla multiflama #4</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Boquillas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-154.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Boquilla multiflama #5</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Boquillas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-155.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Boquilla para soplete joyero tipo Harris</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Encendedores" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-156.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Encendedor cazuela sencillo</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Encendedores" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-157.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Encendedor cazuela triple</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Manómetros" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-158.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Manómetros</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Mezcladores" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-159.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Mezcladores multiflama</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Empaques" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-160.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Empaque para CO2</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Empaques" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-161.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Empaque para CO2</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Válulas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-162.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Válula Check</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Válulas" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-163.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Válula Check</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Tubos" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-164.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Tubo para multiflama 28"</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Equipos de corte" data-brands="Victor" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-165.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Equipo de corte Víctor original ST400</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Equipos de corte" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-169.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Equipo de corte tipo joyero</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Máquina tortuga" data-brands="Hyperweld" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-166.jpg" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Máquina tortuga IK12 Tipo Koike</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Máquina tortuga" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-167.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Riel para máquina tortuga tipo Koike</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Mangueras" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-168.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Manguera cuata para oxigas</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Fundentes" data-brands="Harris" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-231.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Fundente de plata</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Fundentes" data-brands="Harris" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-232.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Fundente para soldadura de aluminio</a>
+            </div>
+          </div>
+          <div data-categories="Oxicorte" data-subcategories="Fundentes" data-brands="" class="product">
+            <div class="img-container">
+              <img src="./images/Productos/product-234.png" alt="" />
+            </div>
+            <div class="bottom">
+              <a href="#">Fundente para soldadura de plata</a>
+            </div>
+          </div>
+          
+          <!-- Fin de productos -->
+
+        </div>
+        <!-- PAGINATION -->
+        <ul id="pagination-list" class="pagination"></ul>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-center">
+          <h3>NAVEGACIÓN</h3>
+          <a href="index.html">Inicio</a>
+          <a href="products.html">Productos</a>
+          <a href="index.html#categories">Categorías</a>
+        </div>
+        <div class="footer-center">
+          <h3>EXTRAS</h3>
+          <a href="index.html#new">Novedades</a>
+          <a href="index.html#featured">Destacados</a>
+          <a href="index.html#brands">Marcas</a>
+        </div>
+        <div class="footer-center">
+          <h3>SÍGUENOS</h3>
+          <a href="https://www.facebook.com/Comercializadora-Industrial-Ns-134343497057541/" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <i class="fab fa-twitter"></i>
+            </i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <div class="footer-center">
+          <h3>CONTÁCTANOS</h3>
+          <div>
+            <a href="https://goo.gl/maps/zmJNwf9twp2saSaF6" target="_blank">
+              <i class="fas fa-map-marked-alt"></i>Benito Juárez #1000, Brisas del Río Monclova, Coahuila </a>
+          </div>
+          <div>
+            <i class="far fa-envelope"></i>comercializadoraindustrialns@outlook.com
+          </div>
+          <div>
+            <i class="fas fa-phone-square-alt"></i> 866-641-8089
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+  <!-- Custom Scripts -->
+  <script src="./js/index.js"></script>
+  <script src="./js/pagination.js"></script>
+</body>
+
+</html>
